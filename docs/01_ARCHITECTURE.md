@@ -123,6 +123,19 @@ its extraction, visual evidence, OCR enrichment, Markdown, provenance, and
 completeness artifacts are durable. Final `document.md` can be rebuilt from
 verified page shards without rerunning OCR.
 
+Round 4 reconstruction removes page furniture conservatively before final
+Markdown compilation. Candidates must have strong cross-page evidence, stable
+edge-page coordinates, short text, and non-body context; known generator
+artifacts such as `Powered by TCPDF`, page-number-only blocks, and recurring
+running headers/footers are removed with a record in
+`reconstruction_removed.jsonl`. Cross-page continuation is then applied to
+body prose and code-like blocks only. Paragraph dehyphenation is skipped for
+URLs, paths, hashes, command-line options, and code-like identifiers. Code
+continuation is based on adjacent pages, matching language/type, indentation,
+line-number continuity, or unbalanced syntactic context. Reconstruction emits
+`reconstruction_diagnostics.json`, and full-document completeness surfaces
+furniture-removal and cross-page-merge counts.
+
 ## Implementation status
 
 - **TASK_01 (Foundation):** Pydantic IR, deterministic IDs, atomic IO, profiles, CLI skeleton, doctor — complete.

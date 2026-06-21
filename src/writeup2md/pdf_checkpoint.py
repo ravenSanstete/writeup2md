@@ -37,7 +37,7 @@ from .performance import PerformanceRecorder
 from .pipeline import ConversionResult
 from .provenance import provenance_to_dicts
 from .render import count_image_references, render_markdown
-from .reconstruction import reconstruct_cross_page_blocks
+from .reconstruction import RECONSTRUCTION_DIAGNOSTICS_JSON, reconstruct_cross_page_blocks
 from .slugify import human_readable_dir_name, update_index_file
 from .workspace import atomic_write_json, atomic_write_text, ensure_document_dirs, write_jsonl
 
@@ -721,6 +721,7 @@ def _write_full_document_completeness(document_dir: Path, doc: Document, pages_t
             }
         )
     final_md = (document_dir / "document.md").read_text(encoding="utf-8")
+    reconstruction = _read_reconstruction_diagnostics(document_dir)
     pages_verified = sum(1 for r in page_records if r["state"] == "verified")
     pages_failed = sum(1 for r in page_records if r["state"] == "failed")
     page_sequence_gaps = sum(1 for r in page_records if r["state"] == "missing")
@@ -749,6 +750,10 @@ def _write_full_document_completeness(document_dir: Path, doc: Document, pages_t
         "base64_image_count": final_md.lower().count("data:image/"),
         "unclosed_fence_count": _count_unclosed_fences(final_md),
         "paddleocr_vl_fallback_count": _count_fallbacks(doc),
+        "furniture_removed_count": reconstruction.get("furniture_removed_count", 0),
+        "cross_page_paragraph_merges": reconstruction.get("cross_page_paragraph_merges", 0),
+        "cross_page_code_merges": reconstruction.get("cross_page_code_merges", 0),
+        "unsafe_merge_candidates_skipped": reconstruction.get("unsafe_merge_candidates_skipped", 0),
     }
     hard_pass = (
         invariants["pages_visited"] == pages_total
@@ -778,13 +783,37 @@ def _write_full_document_completeness(document_dir: Path, doc: Document, pages_t
         f"- page_sequence_gaps: {page_sequence_gaps}",
         f"- visuals_total: {visuals_total}",
         f"- visuals_missing: {visuals_missing}",
+        f"- furniture_removed_count: {invariants['furniture_removed_count']}",
+        f"- cross_page_paragraph_merges: {invariants['cross_page_paragraph_merges']}",
+        f"- cross_page_code_merges: {invariants['cross_page_code_merges']}",
+        f"- unsafe_merge_candidates_skipped: {invariants['unsafe_merge_candidates_skipped']}",
         f"- passed: {hard_pass}",
     ]
     if suspicious_pages:
         lines.extend(["", "## Suspicious Pages"])
         for item in suspicious_pages:
             lines.append(f"- page {item['page_number']}: {', '.join(item['warnings'])}")
+    unsafe = reconstruction.get("unsafe_merge_candidates", [])
+    if unsafe:
+        lines.extend(["", "## Unsafe Merge Candidates Skipped"])
+        for item in unsafe[:50]:
+            lines.append(
+                "- pages "
+                f"{item.get('previous_page')}->{item.get('next_page')} "
+                f"blocks {item.get('previous_block_id')}->{item.get('next_block_id')}: "
+                f"{item.get('reason')}"
+            )
     atomic_write_text(document_dir / FULL_DOCUMENT_COMPLETENESS_MD, "\n".join(lines) + "\n")
+
+
+def _read_reconstruction_diagnostics(document_dir: Path) -> dict[str, Any]:
+    path = document_dir / RECONSTRUCTION_DIAGNOSTICS_JSON
+    if not path.is_file():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
 
 
 def _count_unclosed_fences(markdown_text: str) -> int:
