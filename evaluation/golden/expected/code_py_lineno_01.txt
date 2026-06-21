@@ -1,0 +1,6 @@
+1  import os
+2  import sys
+3  
+4  def main():
+5      path = sys.argv[1]
+6      print(os.path.abspath(path))

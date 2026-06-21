@@ -1,0 +1,3 @@
+Jan  1 00:00:01 hostname sshd[123]: Accepted publickey for root
+Jan  1 00:00:02 hostname sudo:    user : TTY=pts/0 ; COMMAND=/bin/ls
+Jan  1 00:00:03 hostname CRON[456]: (root) CMD (run-parts)

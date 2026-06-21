@@ -1,0 +1,6 @@
+import asyncio
+async def fetch():
+    await asyncio.sleep(1)
+    return 'ok'
+async def main():
+    return await asyncio.gather(fetch(), fetch())

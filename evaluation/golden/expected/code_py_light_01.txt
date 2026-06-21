@@ -1,0 +1,6 @@
+import requests
+url = 'https://example.com/api'
+r = requests.get(url, timeout=10)
+if r.status_code == 200:
+    data = r.json()
+    print(data['result'])

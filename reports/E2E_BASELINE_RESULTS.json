@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "sample_id": "01-a-bug-hunters-diary-a-guided-tour-through-the-wild",
+      "source": "A Bug Hunters Diary - A Guided Tour Through the Wilds of Software Security (Tobias Klein) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "page_range": [
+        0,
+        3
+      ],
+      "command": "writeup2md convert A Bug Hunters Diary - A Guided Tour Through the Wilds of Software Security (Tobias Klein) (z-library.sk, 1lib.sk, z-lib.sk).pdf (page_range=(0, 3))",
+      "exit_code": 0,
+      "processing_time_s": 39.68,
+      "output_path": "/Users/morinop/Desktop/writeup2md/outputs/e2e_baseline/01-a-bug-hunters-diary-a-guided-tour-through-the-wild/38bccb4839b4e9a4",
+      "document_status": "review",
+      "page_count": null,
+      "native_text_block_count": 0,
+      "native_code_block_count": 0,
+      "visual_block_count": 0,
+      "transcribed_visual_count": 0,
+      "unresolved_visual_count": 0,
+      "failed_visual_count": 0,
+      "warnings": [],
+      "errors": [],
+      "markdown_character_count": 164,
+      "markdown_code_block_count": 0,
+      "stderr_tail": "Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"
+    },
+    {
+      "sample_id": "02-cybersecurity-tabletop-exercises-from-planning-to-",
+      "source": "Cybersecurity Tabletop Exercises - From Planning to Execution (for Duc Pham) (Robert Lelewski, John Hollenberger) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "page_range": [
+        0,
+        3
+      ],
+      "command": "writeup2md convert Cybersecurity Tabletop Exercises - From Planning to Execution (for Duc Pham) (Robert Lelewski, John Hollenberger) (z-library.sk, 1lib.sk, z-lib.sk).pdf (page_range=(0, 3))",
+      "exit_code": 0,
+      "processing_time_s": 91.22,
+      "output_path": "/Users/morinop/Desktop/writeup2md/outputs/e2e_baseline/02-cybersecurity-tabletop-exercises-from-planning-to-/e58fdc1d1d23860d",
+      "document_status": "review",
+      "page_count": null,
+      "native_text_block_count": 0,
+      "native_code_block_count": 0,
+      "visual_block_count": 0,
+      "transcribed_visual_count": 0,
+      "unresolved_visual_count": 0,
+      "failed_visual_count": 0,
+      "warnings": [],
+      "errors": [],
+      "markdown_character_count": 1872,
+      "markdown_code_block_count": 1,
+      "stderr_tail": "Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"
+    },
+    {
+      "sample_id": "03-from-day-zero-to-zero-day-a-hands-on-guide-to-vuln",
+      "source": "From Day Zero to Zero Day A Hands-On Guide to Vulnerability Research (Eugene Lim) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "command": "writeup2md convert From Day Zero to Zero Day A Hands-On Guide to Vulnerability Research (Eugene Lim) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "exit_code": -1,
+      "processing_time_s": 900.0,
+      "document_status": "timeout",
+      "output_path": null,
+      "error": "hard 900s timeout exceeded"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"source":"./raw_data/tutorial.pdf","tags":["tutorial"]}
+{"source":"https://example.com/security-writeup","tags":["writeup","web-security"]}
+{"id":"custom-id","source":"./raw_data/article.html","profile":"strict"}

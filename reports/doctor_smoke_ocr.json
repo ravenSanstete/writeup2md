@@ -1,0 +1,67 @@
+{
+  "backend": "paddleocr-vl-element",
+  "backend_version": "0.9B-element",
+  "is_mock": false,
+  "input_image": "evaluation/golden/images/code_py_light_01.png",
+  "input_dimensions": [
+    640,
+    132
+  ],
+  "model_name": "PaddlePaddle/PaddleOCR-VL",
+  "model_repo": "PaddlePaddle/PaddleOCR-VL",
+  "model_revision": "baee27eebcbf26cdeab160116679d765f13a3f27",
+  "pipeline_version": "element",
+  "full_pipeline": false,
+  "device": "mps",
+  "engine_version": {
+    "transformers": "4.55.0",
+    "torch": "2.12.0",
+    "model_repo": "PaddlePaddle/PaddleOCR-VL",
+    "model_revision": "baee27eebcbf26cdeab160116679d765f13a3f27",
+    "device": "mps",
+    "dtype": "torch.float16",
+    "causal_mask_shim_applied": true
+  },
+  "load_duration_s": 5.513967000006232,
+  "inference_duration_s": 1.189401290990645,
+  "total_elapsed_s": 6.703758542018477,
+  "region_count": 6,
+  "model_confidence": 0.0,
+  "raw_text": "import requests\n\nurl = 'https://example.com/api'\nr = requests.get(url, timeout=10)\n\nif r.status_code == 200:\n    data = r.json()\n    print(data['result'])",
+  "raw_output_path": "/var/folders/8z/ycbqn4pn0159stcvwf708lnc0000gn/T/writeup2md_paddleocr_vl_element_raw/paddleocr_vl_element_raw_l5yv2f0o.json",
+  "fallback_used": "",
+  "mock_used": false,
+  "rapid_used_as_primary": false,
+  "regions": [
+    {
+      "text": "import requests",
+      "confidence": 0.0,
+      "bbox": []
+    },
+    {
+      "text": "url = 'https://example.com/api'",
+      "confidence": 0.0,
+      "bbox": []
+    },
+    {
+      "text": "r = requests.get(url, timeout=10)",
+      "confidence": 0.0,
+      "bbox": []
+    },
+    {
+      "text": "if r.status_code == 200:",
+      "confidence": 0.0,
+      "bbox": []
+    },
+    {
+      "text": "    data = r.json()",
+      "confidence": 0.0,
+      "bbox": []
+    },
+    {
+      "text": "    print(data['result'])",
+      "confidence": 0.0,
+      "bbox": []
+    }
+  ]
+}

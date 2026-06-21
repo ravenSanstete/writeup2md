@@ -1,0 +1,4 @@
+from urllib.parse import urlparse
+u = urlparse('https://api.example.com/v1/users?id=42&format=json')
+print(u.scheme, u.netloc, u.path)
+print(u.query)

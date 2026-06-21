@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "app.py", line 42, in main
+    return do_thing()
+  File "app.py", line 88, in do_thing
+    raise ValueError('bad input')
+ValueError: bad input

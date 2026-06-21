@@ -1,0 +1,5 @@
+database:
+  url: postgres://localhost/app
+  pool:
+    size: 10
+    timeout: 30

@@ -1,0 +1,6 @@
+[default]
+key = value
+debug = true
+
+[prod]
+key = secret

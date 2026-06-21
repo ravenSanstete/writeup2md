@@ -1,0 +1,5 @@
+def fetch_user(uid: int):
+    user = db.query(User).get(uid)
+    if user is None:
+        raise NotFound('user not found')
+    return user.to_dict()

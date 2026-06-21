@@ -1,0 +1,3 @@
+#!/bin/bash
+sha256sum file.txt | awk '{print $1}'
+echo done

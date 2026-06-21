@@ -1,0 +1,4 @@
+$ curl -s -o /dev/null -w '%{http_code}' https://example.com
+200
+$ echo OK
+OK

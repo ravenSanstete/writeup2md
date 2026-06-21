@@ -1,0 +1,3 @@
+2026-01-01 00:00:01 INFO  starting server on :8080
+2026-01-01 00:00:05 WARN  slow query took 1.2s
+2026-01-01 00:00:10 ERROR session expired for user=42

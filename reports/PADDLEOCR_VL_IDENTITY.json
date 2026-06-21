@@ -1,0 +1,69 @@
+{
+  "model_repo": "PaddlePaddle/PaddleOCR-VL",
+  "model_revision": "baee27eebcbf26cdeab160116679d765f13a3f27",
+  "resolved_at": "2026-06-20",
+  "last_modified": "2026-05-28T09:36:36+00:00",
+  "base_model": "baidu/ERNIE-4.5-0.3B-Paddle",
+  "tags": [
+    "PaddleOCR",
+    "safetensors",
+    "paddleocr_vl",
+    "ERNIE4.5",
+    "PaddlePaddle",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "chart",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2510.14528"
+  ],
+  "siblings": [
+    ".gitattributes",
+    "LICENSE",
+    "PP-DocLayoutV2/config.json",
+    "PP-DocLayoutV2/inference.pdiparams",
+    "PP-DocLayoutV2/inference.pdmodel",
+    "PP-DocLayoutV2/inference.yml",
+    "README.md",
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "configuration_paddleocr_vl.py",
+    "generation_config.json",
+    "image_processing_paddleocr_vl.py",
+    "inference.yml",
+    "model.safetensors",
+    "modeling_paddleocr_vl.py",
+    "preprocessor_config.json",
+    "processing_paddleocr_vl.py",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "pipeline_modes": {
+    "full": {
+      "backend_name": "paddleocr-vl",
+      "description": "Official PaddleOCR v1 pipeline wrapping PP-DocLayoutV2 layout + PaddleOCR-VL recognition + table/formula/chart branches.",
+      "requires": ["paddleocr", "paddlepaddle"],
+      "apple_silicon_status": "blocked_until_paddlepaddle_arm64_wheel_available"
+    },
+    "element": {
+      "backend_name": "paddleocr-vl-element",
+      "description": "HF transformers element-mode: AutoModelForImageTextToText + AutoProcessor, trust_remote_code=True, do_sample=False. Pre-cropped element images in, recognized text out.",
+      "requires": ["transformers>=4.45", "torch>=2.1", "huggingface_hub>=0.20", "pillow>=10"],
+      "apple_silicon_status": "viable_on_mps",
+      "device_default": "mps"
+    }
+  },
+  "source_of_truth": "src/writeup2md/ocr/model_identity.py"
+}

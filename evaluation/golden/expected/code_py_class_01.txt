@@ -1,0 +1,6 @@
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__()
+        self.name = name
+    def bark(self):
+        print(f'{self.name} says woof')

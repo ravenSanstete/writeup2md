@@ -1,0 +1,28 @@
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/a-bug-hunters-diary-a-guided-tour-through-the-wilds-of-softw.pdf", "explicit_id": "pdf_a-bug-hunters-diary-a-guided-tour-through-the-wilds-of-softw", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/cybersecurity-tabletop-exercises-from-planning-to-execution.pdf", "explicit_id": "pdf_cybersecurity-tabletop-exercises-from-planning-to-execution", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/from-day-zero-to-zero-day-a-hands-on-guide-to-vulnerability-.pdf", "explicit_id": "pdf_from-day-zero-to-zero-day-a-hands-on-guide-to-vulnerability-", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/penetration-testing-a-hands-on-introduction-to-hacking.pdf", "explicit_id": "pdf_penetration-testing-a-hands-on-introduction-to-hacking", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/pocgtfo.pdf", "explicit_id": "pdf_pocgtfo", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/real-world-bug-hunting-a-field-guide-to-web-hacking.pdf", "explicit_id": "pdf_real-world-bug-hunting-a-field-guide-to-web-hacking", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/doc.pdf", "explicit_id": "pdf_doc", "tags": ["round2_release", "pdf", "excerpt"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/html/tutorial.html", "explicit_id": "html_tutorial", "tags": ["round2_release", "html", "fixture"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/mixed.pdf", "explicit_id": "cap_mixed", "tags": ["round2_release", "capture_corpus", "pdf"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/multicolumn.pdf", "explicit_id": "cap_multicolumn", "tags": ["round2_release", "capture_corpus", "pdf"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/native.pdf", "explicit_id": "cap_native", "tags": ["round2_release", "capture_corpus", "pdf"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/scanned.pdf", "explicit_id": "cap_scanned", "tags": ["round2_release", "capture_corpus", "pdf"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/copy_button.html", "explicit_id": "cap_copy_button", "tags": ["round2_release", "capture_corpus", "html"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/decorative_mixed.html", "explicit_id": "cap_decorative_mixed", "tags": ["round2_release", "capture_corpus", "html"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/lazy_load.html", "explicit_id": "cap_lazy_load", "tags": ["round2_release", "capture_corpus", "html"]}
+{"source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/native_plus_screenshot.html", "explicit_id": "cap_native_plus_screenshot", "tags": ["round2_release", "capture_corpus", "html"]}
+{"source": "https://bbs.kanxue.com/thread-290219.htm", "explicit_id": "url_00", "tags": ["round2_release", "url"]}
+{"source": "https://docs.python.org/3/tutorial/inputoutput.html", "explicit_id": "url_01", "tags": ["round2_release", "url"]}
+{"source": "https://docs.python.org/3/library/subprocess.html", "explicit_id": "url_02", "tags": ["round2_release", "url"]}
+{"source": "https://requests.readthedocs.io/en/latest/user/quickstart/", "explicit_id": "url_03", "tags": ["round2_release", "url"]}
+{"source": "https://flask.palletsprojects.com/en/stable/quickstart/", "explicit_id": "url_04", "tags": ["round2_release", "url"]}
+{"source": "https://fastapi.tiangolo.com/tutorial/first-steps/", "explicit_id": "url_05", "tags": ["round2_release", "url"]}
+{"source": "https://docs.docker.com/get-started/", "explicit_id": "url_06", "tags": ["round2_release", "url"]}
+{"source": "https://kubernetes.io/docs/concepts/overview/", "explicit_id": "url_07", "tags": ["round2_release", "url"]}
+{"source": "https://owasp.org/www-community/attacks/xss/", "explicit_id": "url_08", "tags": ["round2_release", "url"]}
+{"source": "https://owasp.org/www-community/attacks/Command_Injection", "explicit_id": "url_09", "tags": ["round2_release", "url"]}
+{"source": "https://portswigger.net/web-security/sql-injection", "explicit_id": "url_10", "tags": ["round2_release", "url"]}
+{"source": "https://portswigger.net/web-security/xss", "explicit_id": "url_11", "tags": ["round2_release", "url"]}

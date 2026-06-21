@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+    at com.example.App.main(App.java:42)
+    at com.example.App.run(App.java:88)
+Caused by: java.lang.IllegalStateException

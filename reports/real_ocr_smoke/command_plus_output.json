@@ -1,0 +1,75 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/command_plus_output.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    640,
+    132
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.34620149998227134,
+  "region_count": 6,
+  "model_confidence": 0.9701323138000255,
+  "regions": [
+    {
+      "text": "$ls-la/tmp",
+      "confidence": 0.9830175936222076,
+      "bbox": [
+        12.0,
+        12.0,
+        116.0,
+        29.0
+      ]
+    },
+    {
+      "text": "total0",
+      "confidence": 0.8894319385290146,
+      "bbox": [
+        12.0,
+        32.0,
+        68.0,
+        44.0
+      ]
+    },
+    {
+      "text": "drwxrwxrwt3rootwheel96Jan100:00",
+      "confidence": 0.9800227668977552,
+      "bbox": [
+        12.0,
+        49.0,
+        329.0,
+        63.0
+      ]
+    },
+    {
+      "text": "drwxr-xr-x6rootwheel192Jan100:00",
+      "confidence": 0.9740301854908466,
+      "bbox": [
+        12.0,
+        67.0,
+        326.0,
+        81.0
+      ]
+    },
+    {
+      "text": "$echodone",
+      "confidence": 0.9964098069402907,
+      "bbox": [
+        13.0,
+        86.0,
+        100.0,
+        99.0
+      ]
+    },
+    {
+      "text": "done",
+      "confidence": 0.9978815913200378,
+      "bbox": [
+        12.0,
+        103.0,
+        45.0,
+        118.0
+      ]
+    }
+  ]
+}

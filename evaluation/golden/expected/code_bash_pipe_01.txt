@@ -1,0 +1,2 @@
+#!/bin/bash
+cat access.log | grep 404 | awk '{print $1}' | sort | uniq -c | sort -rn

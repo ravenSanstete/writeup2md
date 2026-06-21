@@ -1,0 +1,3 @@
+curl -X POST https://api.example.com/users \
+  -H 'Content-Type: application/json' \
+  -d '{"name": "admin"}'

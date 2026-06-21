@@ -1,0 +1,4 @@
+import hashlib
+data = b'hello world'
+h = hashlib.sha256(data).hexdigest()
+print(h)

@@ -1,0 +1,4 @@
+DATABASE_URL=postgres://localhost/app
+SECRET_KEY=abc123def456
+DEBUG=True
+PORT=8080

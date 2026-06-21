@@ -1,0 +1,4 @@
+d = {'a': [1, (2, 3)], 'b': <int>}
+x = (a if a > 0 else b)
+y = [i for i in range(10) if i % 2]
+z = {k: v for k, v in d.items()}

@@ -1,0 +1,4 @@
+s1 = 'hello\nworld'
+s2 = "tab\there"
+s3 = 'quote\'s here'
+s4 = "back\\slash"

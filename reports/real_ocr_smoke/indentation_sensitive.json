@@ -1,0 +1,75 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/indentation_sensitive.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    640,
+    132
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.28224954099277966,
+  "region_count": 6,
+  "model_confidence": 0.901404140940892,
+  "regions": [
+    {
+      "text": "def f（x):",
+      "confidence": 0.8164766364627414,
+      "bbox": [
+        12.0,
+        13.0,
+        83.0,
+        27.0
+      ]
+    },
+    {
+      "text": "ifx>0:",
+      "confidence": 0.8482110500335693,
+      "bbox": [
+        45.0,
+        31.0,
+        115.0,
+        45.0
+      ]
+    },
+    {
+      "text": "for i in range(x):",
+      "confidence": 0.879169053501553,
+      "bbox": [
+        76.0,
+        49.0,
+        219.0,
+        65.0
+      ]
+    },
+    {
+      "text": "ifi%2==0:",
+      "confidence": 0.9020301070478227,
+      "bbox": [
+        109.0,
+        67.0,
+        218.0,
+        81.0
+      ]
+    },
+    {
+      "text": "print(i)",
+      "confidence": 0.9677955880761147,
+      "bbox": [
+        140.0,
+        84.0,
+        203.0,
+        101.0
+      ]
+    },
+    {
+      "text": "returnx",
+      "confidence": 0.9947424105235508,
+      "bbox": [
+        46.0,
+        105.0,
+        109.0,
+        117.0
+      ]
+    }
+  ]
+}

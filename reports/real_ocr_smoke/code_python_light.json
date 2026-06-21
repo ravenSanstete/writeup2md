@@ -1,0 +1,75 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/code_python_light.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    640,
+    132
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.30898729199543595,
+  "region_count": 6,
+  "model_confidence": 0.956910829776885,
+  "regions": [
+    {
+      "text": "importrequests",
+      "confidence": 0.9982823261192867,
+      "bbox": [
+        13.0,
+        14.0,
+        132.0,
+        28.0
+      ]
+    },
+    {
+      "text": "url='https://example.com/api",
+      "confidence": 0.9809998167412621,
+      "bbox": [
+        11.0,
+        30.0,
+        257.0,
+        48.0
+      ]
+    },
+    {
+      "text": "r= requests.get(url，timeout=10)",
+      "confidence": 0.9361866404933314,
+      "bbox": [
+        13.0,
+        49.0,
+        274.0,
+        65.0
+      ]
+    },
+    {
+      "text": "if r.status_code ==200:",
+      "confidence": 0.9204567593076954,
+      "bbox": [
+        12.0,
+        67.0,
+        204.0,
+        81.0
+      ]
+    },
+    {
+      "text": "data =r.json()",
+      "confidence": 0.9366971509797233,
+      "bbox": [
+        44.0,
+        85.0,
+        163.0,
+        100.0
+      ]
+    },
+    {
+      "text": "print(data['result'])",
+      "confidence": 0.9688422850200108,
+      "bbox": [
+        44.0,
+        102.0,
+        211.0,
+        119.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+GET /api/v1/users HTTP/1.1
+Host: api.example.com
+Authorization: Bearer abc123
+Accept: application/json
+User-Agent: curl/8.0

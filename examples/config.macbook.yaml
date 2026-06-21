@@ -1,0 +1,47 @@
+pipeline:
+  profile: macbook
+  retain_raw_evidence: true
+  deterministic: true
+  resume: true
+  workers: 1
+  max_workers: 2
+
+pdf:
+  initial_render_dpi: 200
+  retry_render_dpi: 300
+  page_batch_size: 1
+  prefer_native_text: true
+  extract_embedded_images: true
+  retain_rendered_pages_in_memory: false
+
+web:
+  browser: chromium
+  browser_instances: 1
+  active_pages: 1
+  auto_scroll: true
+  wait_for_lazy_images: true
+  prefer_dom_code: true
+  close_page_after_source: true
+
+ocr:
+  backend: paddleocr_vl
+  model: PaddlePaddle/PaddleOCR-VL
+  device: auto
+  model_instances: 1
+  max_concurrent_inference: 1
+  heavy_queue_capacity: 2
+  auto_repair: false
+
+markdown:
+  pure_text: true
+  allow_images: false
+
+ui:
+  lazy_load_documents: true
+  lazy_load_evidence: true
+  index_page_size: 50
+  preload_thumbnails: false
+
+quality:
+  unresolved_important_visual_policy: review
+  accepted_requires_zero_unresolved_visuals: true

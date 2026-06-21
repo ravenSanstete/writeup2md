@@ -1,0 +1,98 @@
+{
+  "summary": {
+    "root": "test_samples",
+    "total_files": 7,
+    "by_type": {
+      "pdf": 7
+    },
+    "total_pdf_pages": 3456,
+    "processable_count": 7,
+    "unsupported_count": 0
+  },
+  "samples": [
+    {
+      "sample_id": "01-a-bug-hunters-diary-a-guided-tour-through-the-wild",
+      "source": "A Bug Hunters Diary - A Guided Tour Through the Wilds of Software Security (Tobias Klein) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/A Bug Hunters Diary - A Guided Tour Through the Wilds of Software Security (Tobias Klein) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "85c1b2cc4afde5357f79d29dc0ccbd1cf3d3684f2f5935eb767c48d00854a2ed",
+      "size_bytes": 5408712,
+      "page_count": 212,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "02-cybersecurity-tabletop-exercises-from-planning-to-",
+      "source": "Cybersecurity Tabletop Exercises - From Planning to Execution (for Duc Pham) (Robert Lelewski, John Hollenberger) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/Cybersecurity Tabletop Exercises - From Planning to Execution (for Duc Pham) (Robert Lelewski, John Hollenberger) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "a245c4ad8feaf5b012a062155ec8a83273c56f5be3309e1e9b67a840d74d4612",
+      "size_bytes": 6047828,
+      "page_count": 389,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "03-from-day-zero-to-zero-day-a-hands-on-guide-to-vuln",
+      "source": "From Day Zero to Zero Day A Hands-On Guide to Vulnerability Research (Eugene Lim) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/From Day Zero to Zero Day A Hands-On Guide to Vulnerability Research (Eugene Lim) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "9af2d50ecd638d7d1b02ba01101e38042eb58b1e38eb7447a197356f52e3376f",
+      "size_bytes": 33102415,
+      "page_count": 347,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "04-penetration-testing-a-hands-on-introduction-to-hac",
+      "source": "Penetration Testing A Hands-On Introduction to Hacking (Georgia Weidman) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/Penetration Testing A Hands-On Introduction to Hacking (Georgia Weidman) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "74c722550eb8312dcc4431bc4f41933de606da3e0c9212b7a2227a8d31246c5b",
+      "size_bytes": 30986290,
+      "page_count": 845,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "05-pocgtfo-manul-laphroaig-z-library-sk-1lib-sk-z-lib",
+      "source": "PoCGTFO (Manul Laphroaig) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/PoCGTFO (Manul Laphroaig) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "f85b787ff6cafd37286151edee31a2ee3b6391a0743d79bcb67a4654f6e46a86",
+      "size_bytes": 17971096,
+      "page_count": 792,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "06-real-world-bug-hunting-a-field-guide-to-web-hackin",
+      "source": "Real-World Bug Hunting  A Field Guide to Web Hacking (Peter Yaworski) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/Real-World Bug Hunting  A Field Guide to Web Hacking (Peter Yaworski) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "83e3ba50b4d880790ca8c7e2929b8085a4e201a3c8b83fbf452bef18cd4d3fea",
+      "size_bytes": 5265486,
+      "page_count": 266,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    },
+    {
+      "sample_id": "07-漏洞战争软件漏洞分析精要-林桠泉-z-library-sk-1lib-sk-z-lib-sk",
+      "source": "漏洞战争：软件漏洞分析精要 (林桠泉) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "source_type": "pdf",
+      "path": "test_samples/漏洞战争：软件漏洞分析精要 (林桠泉) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "15cf54726edc516c51a1b7233bbc4d574534265bbcf78e8aa1f661a137061176",
+      "size_bytes": 19377489,
+      "page_count": 605,
+      "asset_directory": null,
+      "expected_processing": true,
+      "notes": ""
+    }
+  ]
+}

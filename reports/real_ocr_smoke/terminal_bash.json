@@ -1,0 +1,125 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr/terminal_bash.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    480,
+    80
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.5687949160055723,
+  "region_count": 11,
+  "model_confidence": 0.9786782918882764,
+  "regions": [
+    {
+      "text": "$",
+      "confidence": 0.9801361560821533,
+      "bbox": [
+        8.0,
+        11.0,
+        26.0,
+        23.0
+      ]
+    },
+    {
+      "text": "python",
+      "confidence": 0.9965550104777018,
+      "bbox": [
+        20.0,
+        9.0,
+        66.0,
+        24.0
+      ]
+    },
+    {
+      "text": "nexploit.py",
+      "confidence": 0.9768839045004412,
+      "bbox": [
+        59.0,
+        9.0,
+        142.0,
+        24.0
+      ]
+    },
+    {
+      "text": "[+]",
+      "confidence": 0.9840594927469889,
+      "bbox": [
+        10.0,
+        26.0,
+        29.0,
+        39.0
+      ]
+    },
+    {
+      "text": "payload",
+      "confidence": 0.9911884239741734,
+      "bbox": [
+        36.0,
+        25.0,
+        96.0,
+        40.0
+      ]
+    },
+    {
+      "text": "injected",
+      "confidence": 0.9951000362634659,
+      "bbox": [
+        91.0,
+        25.0,
+        149.0,
+        40.0
+      ]
+    },
+    {
+      "text": "[+]",
+      "confidence": 0.9903999368349711,
+      "bbox": [
+        10.0,
+        41.0,
+        28.0,
+        55.0
+      ]
+    },
+    {
+      "text": "session",
+      "confidence": 0.8958551415375301,
+      "bbox": [
+        36.0,
+        44.0,
+        85.0,
+        53.0
+      ]
+    },
+    {
+      "text": "1cookieobtained",
+      "confidence": 0.9690191626548768,
+      "bbox": [
+        82.0,
+        42.0,
+        197.0,
+        54.0
+      ]
+    },
+    {
+      "text": "[+]",
+      "confidence": 0.9890274405479431,
+      "bbox": [
+        10.0,
+        57.0,
+        29.0,
+        71.0
+      ]
+    },
+    {
+      "text": "done",
+      "confidence": 0.997236505150795,
+      "bbox": [
+        35.0,
+        58.0,
+        65.0,
+        71.0
+      ]
+    }
+  ]
+}

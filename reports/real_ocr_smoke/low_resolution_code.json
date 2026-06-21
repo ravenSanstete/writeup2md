@@ -1,0 +1,35 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/low_resolution_code.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    80,
+    38
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.11844337498769164,
+  "region_count": 2,
+  "model_confidence": 0.9433074656761054,
+  "regions": [
+    {
+      "text": "y=2",
+      "confidence": 0.9865379730860392,
+      "bbox": [
+        3.0,
+        15.0,
+        19.0,
+        25.0
+      ]
+    },
+    {
+      "text": "pr1nt (×+y)",
+      "confidence": 0.9000769582661715,
+      "bbox": [
+        3.0,
+        25.0,
+        54.0,
+        35.0
+      ]
+    }
+  ]
+}

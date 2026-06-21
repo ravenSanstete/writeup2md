@@ -1,0 +1,5 @@
+#!/bin/bash
+for f in *.txt; do
+  echo "processing $f"
+  wc -l "$f"
+done

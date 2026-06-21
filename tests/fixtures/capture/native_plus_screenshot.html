@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Native Code Plus Screenshot</title>
+</head>
+<body>
+<article>
+  <h1>Native Code Plus Screenshot</h1>
+  <p>This article has a <code>&lt;pre&gt;&lt;code&gt;</code> block AND an
+     inline screenshot of the same code. The DOM code must be used; no
+     duplicate visual block should be created for the screenshot.</p>
+  <pre><code class="language-python">def login(user, password):
+    import requests
+    r = requests.post(
+        'https://api.example.com/v1/login',
+        json={'user': user, 'password': password},
+    )
+    return r.json()
+</code></pre>
+  <p>Here is a screenshot of the same code (decorative — DOM text already exists):</p>
+  <p>
+    <img src="https://example.com/code-screenshot.png"
+         alt="Screenshot of the login function above"
+         width="600" height="200">
+  </p>
+  <p>End of article.</p>
+</article>
+</body>
+</html>

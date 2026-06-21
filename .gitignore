@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+wheels/
+*.whl
+
+# Test / cache artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Project runtime outputs (regenerable, large, may contain third-party PDFs)
+outputs/
+test_samples/
+reports/ROUND_2_CORPUS/pdfs/
+
+# OCR backend raw dumps
+/tmp/writeup2md_*_raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local secrets / env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

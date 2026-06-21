@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "writeup2md"
+version = "0.1.0"
+description = "Convert technical tutorials and cybersecurity writeups from PDF or URL into high-quality, image-free Markdown."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "writeup2md" }]
+dependencies = [
+  "typer>=0.9",
+  "rich>=13",
+  "pydantic>=2.4",
+  "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+pdf = ["pymupdf>=1.23"]
+web = ["playwright>=1.40", "beautifulsoup4>=4.12", "lxml>=4.9"]
+ui = ["streamlit>=1.30"]
+ocr = []  # PaddleOCR-VL is loaded lazily and isolated behind an adapter.
+real-ocr = ["rapidocr-onnxruntime>=1.3", "pillow>=10", "numpy>=1.24"]
+paddle-ocr = ["paddleocr>=2.6"]
+paddleocr-vl = [
+  # Element mode (works on Apple Silicon via MPS, no PaddlePaddle required).
+  "transformers>=4.45",
+  "torch>=2.1",
+  "huggingface_hub>=0.20",
+  "pillow>=10",
+  # Full official pipeline (requires PaddlePaddle; arm64 wheels may be missing).
+  "paddleocr>=3.0",
+  "paddlepaddle>=3.0",
+]
+paddleocr-vl-element = [
+  # Lightweight install: only the element-mode runtime (HF transformers).
+  "transformers>=4.45",
+  "torch>=2.1",
+  "huggingface_hub>=0.20",
+  "pillow>=10",
+]
+mlx-ocr = ["mlx-vlm>=0.1", "pillow>=10"]
+dev = [
+  "pytest>=7",
+  "pytest-cov>=4",
+  "mypy>=1.5",
+  "ruff>=0.1",
+]
+all = [
+  "pymupdf>=1.23",
+  "playwright>=1.40",
+  "beautifulsoup4>=4.12",
+  "lxml>=4.9",
+  "streamlit>=1.30",
+  "rapidocr-onnxruntime>=1.3",
+  "pillow>=10",
+  "numpy>=1.24",
+  "transformers>=4.45",
+  "torch>=2.1",
+  "huggingface_hub>=0.20",
+]
+
+[project.scripts]
+writeup2md = "writeup2md.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+writeup2md = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "integration: integration tests",
+  "ocr: tests that require the real OCR backend",
+  "real_ocr: tests that require a real OCR model (rapid/paddle/mlx), never mock",
+  "real_paddleocr_vl: tests that require the real PaddleOCR-VL model (paddleocr-vl or paddleocr-vl-element), never mock and never rapid",
+  "pdf: tests that require PDF libraries",
+  "web: tests that require Playwright or network access",
+  "slow: slow tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict_optional = true
+ignore_missing_imports = true

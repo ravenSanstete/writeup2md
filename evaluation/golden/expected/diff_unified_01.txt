@@ -1,0 +1,7 @@
+--- a/app.py
++++ b/app.py
+@@ -10,7 +10,7 @@
+ def main():
+-    print('starting')
++    logging.info('starting')
+     run()

@@ -1,0 +1,267 @@
+{
+  "total_documents": 38,
+  "total_blocks": 1303,
+  "total_visual_blocks": 82,
+  "status_counts": {
+    "review": 18,
+    "accepted": 19,
+    "rejected": 1
+  },
+  "kind_counts": {
+    "pdf": 11,
+    "html": 5,
+    "url": 22
+  },
+  "kind_visual": {
+    "pdf": 34,
+    "html": 7,
+    "url": 41
+  },
+  "visual_types": {
+    "code": 48,
+    "diff": 5,
+    "table": 4,
+    "configuration": 5,
+    "log": 1,
+    "decorative": 13,
+    "ui_screenshot": 2,
+    "http": 3,
+    "terminal": 1
+  },
+  "coverage_states": {
+    "review_required": 38,
+    "transcribed": 6,
+    "decorative_with_reason": 13,
+    "failed_with_diagnostic": 25
+  },
+  "per_doc": [
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/a-bug-hunters-diary-a-guided-tour-through-the-wilds-of-softw.pdf",
+      "status": "review",
+      "blocks": 72,
+      "visual": 6
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/cybersecurity-tabletop-exercises-from-planning-to-execution.pdf",
+      "status": "review",
+      "blocks": 276,
+      "visual": 3
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/doc.pdf",
+      "status": "review",
+      "blocks": 277,
+      "visual": 4
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/from-day-zero-to-zero-day-a-hands-on-guide-to-vulnerability-.pdf",
+      "status": "review",
+      "blocks": 100,
+      "visual": 8
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/penetration-testing-a-hands-on-introduction-to-hacking.pdf",
+      "status": "review",
+      "blocks": 139,
+      "visual": 2
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/pocgtfo.pdf",
+      "status": "review",
+      "blocks": 67,
+      "visual": 3
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/reports/ROUND_2_CORPUS/pdfs/real-world-bug-hunting-a-field-guide-to-web-hacking.pdf",
+      "status": "review",
+      "blocks": 101,
+      "visual": 6
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/copy_button.html",
+      "status": "accepted",
+      "blocks": 4,
+      "visual": 0
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/decorative_mixed.html",
+      "status": "accepted",
+      "blocks": 10,
+      "visual": 4
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/lazy_load.html",
+      "status": "review",
+      "blocks": 6,
+      "visual": 2
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/mixed.pdf",
+      "status": "review",
+      "blocks": 3,
+      "visual": 1
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/multicolumn.pdf",
+      "status": "accepted",
+      "blocks": 6,
+      "visual": 0
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/native.pdf",
+      "status": "accepted",
+      "blocks": 6,
+      "visual": 0
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/native_plus_screenshot.html",
+      "status": "accepted",
+      "blocks": 5,
+      "visual": 0
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/capture/scanned.pdf",
+      "status": "review",
+      "blocks": 1,
+      "visual": 1
+    },
+    {
+      "source": "/Users/morinop/Desktop/writeup2md/tests/fixtures/html/tutorial.html",
+      "status": "review",
+      "blocks": 19,
+      "visual": 1
+    },
+    {
+      "source": "https://bbs.kanxue.com/thread-290219.htm",
+      "status": "review",
+      "blocks": 20,
+      "visual": 18
+    },
+    {
+      "source": "https://docs.aiohttp.org/en/stable",
+      "status": "accepted",
+      "blocks": 2,
+      "visual": 1
+    },
+    {
+      "source": "https://docs.djangoproject.com/en/stable/intro/tutorial01",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.docker.com/get-started",
+      "status": "accepted",
+      "blocks": 11,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.pytest.org/en/stable/getting-started.html",
+      "status": "accepted",
+      "blocks": 2,
+      "visual": 1
+    },
+    {
+      "source": "https://docs.python.org/3/library/asyncio.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.python.org/3/library/json.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.python.org/3/library/re.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.python.org/3/library/subprocess.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://fastapi.tiangolo.com/tutorial/first-steps",
+      "status": "review",
+      "blocks": 134,
+      "visual": 2
+    },
+    {
+      "source": "https://flask.palletsprojects.com/en/stable/quickstart",
+      "status": "accepted",
+      "blocks": 2,
+      "visual": 1
+    },
+    {
+      "source": "https://kubernetes.io/docs/concepts/overview",
+      "status": "review",
+      "blocks": 3,
+      "visual": 1
+    },
+    {
+      "source": "https://numpy.org/doc/stable/user/quickstart.html",
+      "status": "review",
+      "blocks": 3,
+      "visual": 2
+    },
+    {
+      "source": "https://owasp.org/www-community/attacks/Command_Injection",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://owasp.org/www-community/attacks/xss",
+      "status": "rejected",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html",
+      "status": "review",
+      "blocks": 4,
+      "visual": 3
+    },
+    {
+      "source": "https://portswigger.net/web-security/sql-injection",
+      "status": "review",
+      "blocks": 6,
+      "visual": 3
+    },
+    {
+      "source": "https://portswigger.net/web-security/xss",
+      "status": "review",
+      "blocks": 11,
+      "visual": 7
+    },
+    {
+      "source": "https://requests.readthedocs.io/en/latest/user/quickstart",
+      "status": "accepted",
+      "blocks": 2,
+      "visual": 1
+    },
+    {
+      "source": "https://scikit-learn.org/stable/getting_started.html",
+      "status": "accepted",
+      "blocks": 1,
+      "visual": 0
+    },
+    {
+      "source": "https://www.tornadoweb.org/en/stable/guide/structured.html",
+      "status": "accepted",
+      "blocks": 2,
+      "visual": 1
+    }
+  ]
+}

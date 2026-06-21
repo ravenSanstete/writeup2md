@@ -1,0 +1,75 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/code_python_dark.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    640,
+    114
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.3542720410041511,
+  "region_count": 6,
+  "model_confidence": 0.9525426785106547,
+  "regions": [
+    {
+      "text": "def fetch_user(uid: int):",
+      "confidence": 0.9363436484336853,
+      "bbox": [
+        12.0,
+        13.0,
+        211.0,
+        27.0
+      ]
+    },
+    {
+      "text": "user=db.query(User).get(uid)",
+      "confidence": 0.9525784850120544,
+      "bbox": [
+        43.0,
+        31.0,
+        282.0,
+        47.0
+      ]
+    },
+    {
+      "text": "if",
+      "confidence": 0.9887425601482391,
+      "bbox": [
+        44.0,
+        49.0,
+        67.0,
+        63.0
+      ]
+    },
+    {
+      "text": "userisNone:",
+      "confidence": 0.9703109156001698,
+      "bbox": [
+        59.0,
+        49.0,
+        171.0,
+        63.0
+      ]
+    },
+    {
+      "text": "raise NotFound('user not found')",
+      "confidence": 0.9186054822057486,
+      "bbox": [
+        77.0,
+        67.0,
+        330.0,
+        81.0
+      ]
+    },
+    {
+      "text": "return user.to_dict()",
+      "confidence": 0.9486749796640306,
+      "bbox": [
+        45.0,
+        85.0,
+        210.0,
+        99.0
+      ]
+    }
+  ]
+}

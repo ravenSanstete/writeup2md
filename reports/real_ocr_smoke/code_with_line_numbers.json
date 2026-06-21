@@ -1,0 +1,115 @@
+{
+  "fixture": "/Users/morinop/Desktop/writeup2md/tests/fixtures/ocr_smoke/code_with_line_numbers.png",
+  "backend": "rapid",
+  "is_mock": false,
+  "input_dimensions": [
+    640,
+    132
+  ],
+  "load_duration_s": 0.05904333299258724,
+  "inference_duration_s": 0.3146723749814555,
+  "region_count": 10,
+  "model_confidence": 0.9706930605187732,
+  "regions": [
+    {
+      "text": "1",
+      "confidence": 0.9837501645088196,
+      "bbox": [
+        13.0,
+        15.0,
+        20.0,
+        26.0
+      ]
+    },
+    {
+      "text": "import os",
+      "confidence": 0.9727029866642423,
+      "bbox": [
+        37.0,
+        14.0,
+        108.0,
+        28.0
+      ]
+    },
+    {
+      "text": "2",
+      "confidence": 0.98751300573349,
+      "bbox": [
+        12.0,
+        32.0,
+        20.0,
+        46.0
+      ]
+    },
+    {
+      "text": "import sys",
+      "confidence": 0.9475123226642609,
+      "bbox": [
+        37.0,
+        32.0,
+        116.0,
+        47.0
+      ]
+    },
+    {
+      "text": "3",
+      "confidence": 0.990171492099762,
+      "bbox": [
+        12.0,
+        49.0,
+        21.0,
+        66.0
+      ]
+    },
+    {
+      "text": "45",
+      "confidence": 0.9401881694793701,
+      "bbox": [
+        11.0,
+        65.0,
+        21.0,
+        104.0
+      ]
+    },
+    {
+      "text": "def main():",
+      "confidence": 0.9301882873881947,
+      "bbox": [
+        36.0,
+        67.0,
+        123.0,
+        81.0
+      ]
+    },
+    {
+      "text": "path = sys.argv[1]",
+      "confidence": 0.9778905014197031,
+      "bbox": [
+        68.0,
+        84.0,
+        211.0,
+        102.0
+      ]
+    },
+    {
+      "text": "6",
+      "confidence": 0.9839069843292236,
+      "bbox": [
+        12.0,
+        101.0,
+        20.0,
+        117.0
+      ]
+    },
+    {
+      "text": "print(os.path.abspath(path))",
+      "confidence": 0.9931066909006664,
+      "bbox": [
+        68.0,
+        102.0,
+        291.0,
+        120.0
+      ]
+    }
+  ]
+}

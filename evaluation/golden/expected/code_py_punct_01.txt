@@ -1,0 +1,4 @@
+regex = r'^[a-zA-Z0-9_]+\.[a-z]{3}$'
+parts = [p.strip() for p in s.split(',') if p]
+d = {'a': [1, 2], 'b': (3, 4)}
+assert x != y and z >= 0

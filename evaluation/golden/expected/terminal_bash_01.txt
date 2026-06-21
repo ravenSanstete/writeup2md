@@ -1,0 +1,6 @@
+$ ls -la /tmp
+total 0
+drwxrwxrwt 3 root wheel 96 Jan 1 00:00 .
+drwxr-xr-x 6 root wheel 192 Jan 1 00:00 ..
+$ echo done
+done
